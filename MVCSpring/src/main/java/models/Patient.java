@@ -1,30 +1,32 @@
 package models;
 
-public class Patient {
-	private Integer id;
-	private Integer age;
-	private String name;
+public class Patient extends Person{
+	public Integer patient_id;
 	
-	public void setAge(Integer age) {
-	      this.age = age;
-	   }
-	   public Integer getAge() {
-	      return age;
-	   }
+	public Double most_recent_temperature = 0.0;
+	
+	public Integer getPatient_id() {
+		return patient_id;
+	}
+	public void setPatient_id(Integer patient_id) {
+		this.patient_id = patient_id;
+	}
+	public Double getMost_recent_temperature() {
+		return most_recent_temperature;
+	}
+	public void setMost_recent_temperature(Double most_recent_temperature) {
+		this.most_recent_temperature = most_recent_temperature;
+	}
+	public Double getMost_recent_pressure() {
+		return most_recent_pressure;
+	}
+	public void setMost_recent_pressure(Double most_recent_pressure) {
+		this.most_recent_pressure = most_recent_pressure;
+	}
+	public Double most_recent_pressure = 0.0;
 
-	   public void setName(String name) {
-	      this.name = name;
-	   }
-	   public String getName() {
-	      return name;
-	   }
-
-	   public void setId(Integer id) {
-	      this.id = id;
-	   }
-	   public Integer getId() {
-	      return id;
-	   }
+	
+	
 	
 
 }
