@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [22/Nov/2017:14:00:09 -0700] "GET /SpringMVCSampleApp HTTP/1.1" 404 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [22/Nov/2017:14:00:14 -0700] "GET /SpringMVCSampleApp HTTP/1.1" 404 - http-bio-8080-exec-9 0
