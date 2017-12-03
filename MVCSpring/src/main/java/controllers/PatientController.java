@@ -16,12 +16,12 @@ import org.hibernate.cfg.Configuration;
 @Controller
 public class PatientController {
 	
-   @RequestMapping(value = "/patient", method = RequestMethod.GET)
+   @RequestMapping(value = "/receptionistPatientUpload", method = RequestMethod.GET)
    public ModelAndView patient() {
-      return new ModelAndView("patient", "command", new Patient());
+      return new ModelAndView("receptionistPatientUpload", "command", new Patient());
    }
    
-   @RequestMapping(value = "/addPatient", method = RequestMethod.POST)
+   @RequestMapping(value = "/receptionistPatientUploadPost", method = RequestMethod.POST)
    public String addStudent(@ModelAttribute("MVCSpring")Patient patient, 
       ModelMap model) {
 	 //creating configuration object
@@ -42,7 +42,8 @@ public class PatientController {
 		session.close();
       model.addAttribute("name", patient.getName());
       model.addAttribute("age", patient.getAge());
-      model.addAttribute("id", patient.getId());
+      model.addAttribute("patient_id", patient.getPatient_id());
+      
       
       return "result";
    }
