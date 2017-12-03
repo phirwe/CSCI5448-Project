@@ -20,7 +20,15 @@
          </tr>
          <tr>
             <td>ID</td>
-            <td>${id}</td>
+            <td>${patient_id}</td>
+         </tr>
+         <tr>
+            <td>Temperature</td>
+            <td>${most_recent_temperature}</td>
+         </tr>
+         <tr>
+            <td>Pressure</td>
+            <td>${most_recent_pressure}</td>
          </tr>
       </table>  
    </body>
