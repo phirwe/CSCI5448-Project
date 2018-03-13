@@ -20,10 +20,13 @@
 
 <!-- Echo all executed SQL to stdout -->  
 <property name="show_sql">true</property> 
-<!-- Drop the existing tables and create new one -->  
-<property name="hbm2ddl.auto">create</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
  
 <mapping resource = "patient.hbm.xml"/>
-   
+<mapping resource = "inventory.hbm.xml"/>
+<mapping resource = "prescription.hbm.xml" />
+<mapping resource = "login.hbm.xml"/>
+<mapping resource = "staff.hbm.xml"/>
+
 </session-factory> 
 </hibernate-configuration>

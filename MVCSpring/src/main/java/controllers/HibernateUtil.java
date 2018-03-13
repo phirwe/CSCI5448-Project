@@ -1,11 +1,12 @@
 package controllers;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class HibernateUtil {
 
-      private static final SessionFactory sessionFactory;
+      /*private static final SessionFactory sessionFactory;
 
       static {
           try {
@@ -20,6 +21,16 @@ public class HibernateUtil {
 
       public static SessionFactory getSessionFactory() {
           return sessionFactory;
-      }
+      }*/
+	
+	public static Session getSessionFromFactory() {
+		Configuration cfg=new Configuration();
+		cfg.configure("hibernate.cfg.xml");//populates the data of the configuration file
+		
+		//creating seession factory object
+		SessionFactory factory=cfg.buildSessionFactory();
+		return factory.openSession();
+	}
+	
 
 }

@@ -25,6 +25,8 @@
 <mapping resource = "patient.hbm.xml"/>
 <mapping resource = "inventory.hbm.xml"/>
 <mapping resource = "prescription.hbm.xml" />
+<mapping resource = "login.hbm.xml"/>
+<mapping resource = "staff.hbm.xml"/>
 
 </session-factory> 
 </hibernate-configuration>

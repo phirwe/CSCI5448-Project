@@ -1,14 +1,14 @@
 package models;
 
 public class Patient extends Person{
-	public Integer patient_id;
+	public String patient_id;
 	
 	public Double most_recent_temperature = 0.0;
 	
-	public Integer getPatient_id() {
+	public String getPatient_id() {
 		return patient_id;
 	}
-	public void setPatient_id(Integer patient_id) {
+	public void setPatient_id(String patient_id) {
 		this.patient_id = patient_id;
 	}
 	public Double getMost_recent_temperature() {
